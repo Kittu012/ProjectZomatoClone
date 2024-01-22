@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
+
 .Hero_Section{
     background: url(https://c8.alamy.com/comp/WMR63C/thanksgiving-day-dinner-with-turkey-and-a-lot-of-delicious-food-WMR63C.jpg);
     background-size: cover;
     height: 60vh;
     color: white;
+    background-position: center;
 }
+
 .navbar{
     display: flex;
     align-items: center;
@@ -18,12 +22,12 @@
 
 }
 .navbar a{
-    color: rgb(17, 13, 13);
+    color: white;
     text-decoration: none;
 }
 .navbar_menu_container{
     display: flex;
-    gap: 15px;
+    gap: 18px;
 
 }
 .navbar_menu_container .user_icon{
@@ -36,6 +40,51 @@
     border: solid 1px white;
     display: none;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center; 
+     gap: 20px;
+     height: calc(60vh-65px);
+
+}
+.hero_section_logo{
+    width: 200px;
+    height: 40px;
+}
+.Hero_Section_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+.hero_section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.input_container_location,
+.input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+
+}
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+
+}
+.input_container_search{
+    width: 65%;
+
+}
 @media only screen and(max-width:600px){
     .navbar_menu_container .user_icon{
         display: flex;
@@ -44,4 +93,74 @@
     .link{
         display: none ;
     }
+    .Hero_Section{
+        min-height: 80vh;
+    }
+    .container{
+        flex-direction: column;
+        background-color:transparent ;
+        width: 100%;
+    }
+    .input_container_location,
+    .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 90%;
+
+    }
+    .container{
+        height: calc(80vh-40px);
+    }
+    .Hero_Section_title{
+        font-size: 18px;
+        width: 95%;
+    }
 }
+/* out of media queries */
+
+.container{
+    margin: 3rem auto;
+    width: 80%;
+
+}
+.container we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.we_offer_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 1s ease;
+    margin-right: 12px;
+}
+.we_offer_card:hover{
+    transform: scale(1.1);
+}
+
+.we_offer_card img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center; 
+
+} 
+.we_offer_content{
+    padding: 10px;
+    
+
+}
+.we_offer_content h2{
+    font-size: 20px;
+    font-weight: 400;
+
+
+
+}
+
+  
