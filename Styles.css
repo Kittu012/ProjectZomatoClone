@@ -122,7 +122,7 @@
     }
 }
 
-/* out of media queries */
+/* out of media queriess */
  
 .container_we_offer{
     margin: 3rem auto;
@@ -146,9 +146,11 @@
     margin-right: 12px;
     align-items: center;
     justify-content: center;
+
 }
 .we_offer_card:hover{
     transform: scale(1.1);
+
 }
 
 .we_offer_card img{
@@ -492,6 +494,7 @@
     padding-top: 1.5rem;
     width: 80%;
     font-size: 13px;
+    display: flex;
 
 }
 
