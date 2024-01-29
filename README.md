@@ -1,6 +1,2 @@
 #This is my first clone project
-
-
-#hello bhargavi
-#edit
-##setup created here for our appln
+#Completed all sections of project
